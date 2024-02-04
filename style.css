@@ -1,0 +1,80 @@
+:root{
+    --black:hsl(0, 0%, 7%);
+    --grey:hsl(0, 0%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --yellow: hsl(47, 88%, 63%);
+}
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--yellow);
+}
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+.card{
+    width: 375px;
+    background-color: var(--white);
+    padding: 20px;
+    border: 2px solid var(--black);
+    border-radius: 5%;
+    box-shadow: 10px 10px var(--black);
+}
+.card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;   
+}
+.card .text{
+    padding-top: 25px;
+}
+.card .text .yellow{
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 5px 10px;
+    max-width: fit-content;
+    border-radius: 5px;
+}
+.card .text .head{
+    padding: 15px 0px;
+    color: var(--black);
+}
+.card .text .body{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.card .text .content{
+    font-size: 16px;
+    padding: 15px 0px 20px ;
+    color: var(--grey);
+    line-height: 28px;
+}
+.author{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 8fr ;
+    column-gap: 10px;
+}
+.author img{
+    max-width: 100%;
+} 
+.author .name{
+    text-align: left;
+    color: var(--black);
+    font-weight: bold; 
+}
+
